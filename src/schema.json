@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "required": [
+    "Host",
+    "User",
+    "Password",
+    "Database",
+    "Engine",
+    "Request"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "Host": {
+      "type": "string"
+    },
+    "Port": {
+      "type": "string"
+    },
+    "User": {
+      "type": "string"
+    },
+    "Password": {
+      "type": "string"
+    },
+    "Database": {
+      "type": "string"
+    },
+    "Engine": {
+      "type": "string",
+      "enum": ["mysql"]
+    },
+    "Request": {
+      "type": "object",
+      "anyOf": [{
+        "additionalProperties": false,
+        "properties": {
+          "Bucket": {
+            "type": "string"
+          },
+          "Key": {
+            "type": "string"
+          }
+        }
+      }, {
+        "additionalProperties": false,
+        "properties": {
+          "Code": {
+            "type": "string"
+          }
+        }
+      }]
+    }
+  }
+}
