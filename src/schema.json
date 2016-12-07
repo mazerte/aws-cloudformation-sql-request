@@ -27,7 +27,7 @@
     },
     "Engine": {
       "type": "string",
-      "enum": ["mysql"]
+      "enum": ["mysql", "postgres"]
     },
     "Request": {
       "type": "object",

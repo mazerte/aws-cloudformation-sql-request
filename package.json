@@ -12,6 +12,7 @@
   "dependencies": {
     "aws-sdk": "^2.6.7",
     "cfn-lambda": "git+https://github.com/mazerte/cfn-lambda.git",
-    "mysql": "^2.11.1"
+    "mysql": "^2.11.1",
+    "pg": "^6.1.0"
   }
 }
